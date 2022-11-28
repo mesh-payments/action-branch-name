@@ -1,20 +1,30 @@
 {
   "name": "action-branch-name",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Github action to enforce naming convention on branch names",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
+    "test": "echo 'no tests'",
+    "all": "npm run lint && npm run prepare && npm run test"
   },
-  "keywords": [
-    "github",
-    "actions"
-  ],
-  "author": "deepakputhraya",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/payble-payments/action-branch-name"
+  },
+  "author": "",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/payble-payments/action-branch-name/issues"
+  },
+  "homepage": "https://github.com/payble-payments/action-branch-name/#readme",
   "dependencies": {
-    "@actions/core": "^1.9.1",
-    "@actions/github": "^1.1.0"
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.31.1",
+    "eslint": "^8.0.0"
   }
 }
