@@ -15,7 +15,7 @@ jobs:
   branch-naming-rules:
     runs-on: ubuntu-latest
     steps:
-      - uses: payble-payments/action-branch-name@master
+      - uses: payble-payments/action-branch-name@main
         with:
           regex: '([a-z])+\/([a-z])+' # Regex the branch should match. This example enforces grouping
           allowed_prefixes: 'feature,stable,fix' # All branches should start with the given prefix
