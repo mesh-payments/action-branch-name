@@ -16,10 +16,10 @@ inputs:
   max_length:
     description: 'Max length of branch name. -1 to ignore the rule'
     default: -1
-
 runs:
   using: 'node16'
-  main: 'index.js'
+  main: 'dist/index.js'
 branding:
   icon: 'alert-triangle'
   color: 'gray-dark'
+

@@ -24,7 +24,7 @@ jobs:
           max_length: 20 # Max length of the branch name
 ```
 
-This action was forked from [deepakputhraya/action-branch-name](https://github.com/deepakputhraya/action-branch-name).
+This action was forked from [deepakputhraya/action-branch-name](https://github.com/deepakputhraya/action-branch-name) and updated using the template in [javascript-action](https://github.com/actions/javascript-action).
 
 ## License
 The scripts and documentation in this project are released under the [MIT License](./LICENSE)
