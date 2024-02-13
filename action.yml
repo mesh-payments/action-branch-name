@@ -17,7 +17,7 @@ inputs:
     description: 'Max length of branch name. -1 to ignore the rule'
     default: -1
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
 branding:
   icon: 'alert-triangle'
